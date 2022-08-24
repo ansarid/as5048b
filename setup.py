@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 '''
-This file is part of the AS5048B library (https://github.com/ansarid/AS5048B).
+This file is part of the as5048b library (https://github.com/ansarid/as5048b).
 Copyright (C) 2022  Daniyal Ansari
 
 This program is free software: you can redistribute it and/or modify
@@ -29,13 +29,13 @@ install_requires = [
                    ]
 
 setuptools.setup(
-    name='AS5048B',
+    name='as5048b',
     version='0.0.1',
     description='Python Library for the AS5048B Absolute Magnetic Rotary Encoder',
     packages=setuptools.find_packages(),
     install_requires=install_requires,
     keywords=['AS5048B', 'magnetic encoder', 'rotary encoder',],
-    url='https://github.com/ansarid/AS5048B',
+    url='https://github.com/ansarid/as5048b',
     long_description=long_description,
     long_description_content_type='text/markdown'
 )
