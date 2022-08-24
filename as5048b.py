@@ -34,6 +34,27 @@ class AS5048B:
             bus (int, optional): _description_. Defaults to 1.
             invert (bool, optional): _description_. Defaults to False.
         """
+
+        '''
+        Programming Control = 0x03
+
+        I²C slave address = 0x15
+
+        OTP Register Zero Position Hi = 0x16
+
+        OTP Register Zero Position Low 6 LSBs = 0x17
+
+        Automatic Gain Control = 0xFA
+
+        Diagnostics = 0xFB
+
+        Magnitude LSB = 0xFC
+        Magnitude MSB = 0xFD
+
+        Angle LSB = 0xFE
+        Angle MSB = 0xFF
+        '''
+
         self.bus = SMBus(bus)  # I2C Bus
         self.address = address  # Encoder I2C address
         self.invert = invert  # Invert encoder direction
